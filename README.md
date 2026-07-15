@@ -10,21 +10,18 @@ Screenshot: district-level drill-down -->
 ## Pipeline
 
 1. **Extract** — real-world Berlin rental listing data loaded into BigQuery
-2. **Transform** — cleaning and modelling with advanced SQL; structured, reusable data layers built with dbt (staging → intermediate → marts)
+2. **Transform** — cleaning and modelling with advanced SQL, organised into layered BigQuery datasets following the raw → intermediate → marts pattern, so each transformation step is isolated and reusable
 3. **Visualise** — interactive exploration in Data Studio: filter by district, price band, and time period
 
 ## Tech stack
 
-- **BigQuery** — data warehouse
+- **BigQuery** — data warehouse with layered datasets (raw / intermediate / marts)
 - **SQL** — extraction, cleaning, aggregation
-- **dbt** — modelled data layers and transformations
 - **Data Studio (Looker Studio)** — interactive dashboard
 
 ## Repo contents
 
-- `models/` — dbt models for the data layers
-- `sql/` — key transformation queries
-- `docs/` — dashboard screenshots
+- `sql/` — key transformation queries per layer
 
 ## What I'd explore next
 
