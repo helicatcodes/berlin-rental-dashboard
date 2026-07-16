@@ -45,10 +45,6 @@ An interactive dashboard analysing Berlin's rental market by district, price, an
   </tr>
 </table>
 
-## Repo contents
-
-* `sql/` — key transformation queries per layer
-
 ## What I'd explore next
 
 * Trend forecasting per district
